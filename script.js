@@ -145,6 +145,9 @@ window.onload = function() {
         }
     }
 };
+document.querySelector("#mobile .fa-solid.fa-bag-shopping").onclick = () => {
+    pagination("cart.html");
+}
 function pagination(url){
     window.location.href = url;
 }
