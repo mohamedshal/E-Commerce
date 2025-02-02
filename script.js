@@ -106,7 +106,7 @@ function deleteProduct(i) {
 }
 // load
 let loader = document.querySelector(".loader");
-window.onload = function() {
+document.addEventListener('DOMContentLoaded', function () {
     loader.style.display = "none";
     const currentPage = window.location.pathname.split('/').pop(); // Get the current page name
     // Handle the logic for shop.html
@@ -144,7 +144,7 @@ window.onload = function() {
             pagination("cart.html");
         }
     }
-};
+});
 document.querySelector("#mobile .fa-solid.fa-bag-shopping").onclick = () => {
     pagination("cart.html");
 }
